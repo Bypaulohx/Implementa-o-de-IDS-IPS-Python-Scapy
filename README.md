@@ -35,20 +35,16 @@ python examples/tests_simulate_scan.py
 ids-ips-scapy/
 ├── .gitignore
 ├── requirements.txt
-├── README.md
 ├── src/
 │ ├── main.py
 │ ├── engine.py
 │ ├── rules.py
 │ ├── alerts.py
 │ ├── utils.py
-│ ├── mitiger.py # opcional (requere sudo) - comentado por padrão
+│ ├── mitiger.py
 │ └── config.yaml
 ├── examples/
 │ └── tests_simulate_scan.py
-├── docs/
-│ ├── architecture.md
-│ └── screenshots/ # coloque aqui os prints para o README
 └── .vscode/
 ├── launch.json
 └── tasks.json
