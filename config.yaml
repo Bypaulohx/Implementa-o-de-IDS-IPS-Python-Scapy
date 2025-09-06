@@ -1,0 +1,17 @@
+interface: null
+bpf: "ip"
+log_file: logs/alerts.log
+alert_webhook: null
+thresholds:
+  portscan:
+    window_seconds: 10
+    unique_ports: 20
+  icmp:
+    window_seconds: 5
+    pps: 50
+  dns_exfil:
+    long_label_len: 40
+    many_subdomains: 6
+mitigation:
+  enabled: false
+  method: "iptables"
